@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    background: rgb(18, 26, 31);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: rgb(39, 55, 59);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.display {
+    background: rgb(182, 182, 182);
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    text-align: right;
+    font-size: 30px;
+    position: relative;
+}
+
+.display-1 {
+    opacity: 0.4;
+    font-size: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.temp-result {
+    opacity: 0.4;
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    font-size: 20px;
+}
+
+.buttons {
+    color: whitesmoke;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid rgba(92, 92, 92, 0.137);
+    height: 100px;
+    width: 100%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgb(30, 43, 46);
+}
+
+.btn-0 {
+    grid-column: 1/3;
+}
+
+.operation,.clear,.backspace,.equal{
+    background-color: #FF8F1F;
+}
+
+.equal:hover {
+    background-color: #d97511;
+}
+
+.operation:hover {
+    background-color: #d97511;
+}
+
+.clear:hover {
+    background-color: #d97511;
+}
+
+.backspace:hover {
+    background-color: #d97511;
+}
